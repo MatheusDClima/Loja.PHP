@@ -1,4 +1,9 @@
--<!DOCTYPE html>
+<?php
+ob_start();
+require('./sheep_core/config.php');
+?>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
