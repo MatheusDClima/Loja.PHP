@@ -24,7 +24,7 @@ require('./sheep_core/config.php');
                 <div class="navbar">
 
                     <div class="logo">
-                        <a href="index.php"><img src="assets/img/logo.nova-2.png" alt="MDStore" width="150px"></a>
+                        <a href="index.php"><img src="assets/img/logo.nova.png" alt="MDStore" width="150px"></a>
                     </div>
 
                   <!--INÍCIO MENU NAVEGAÇÃO TOPO-->
