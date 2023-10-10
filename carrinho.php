@@ -58,7 +58,7 @@ require('./sheep_core/config.php');
      <!--INÍCIO CARRINHO DE COMPRAS-->
         
      <div class="barraLateral">
-        
+
             <div class="topoCarrinho">
                 <p>Meu Carrinho</p>
             </div>        
@@ -70,7 +70,7 @@ require('./sheep_core/config.php');
                 <img src="assets/img/produto-4.jpg" alt="" class="img-carrinho">
             </div>
 
-                <p>Faculdade Projeção</p>
+                <p>Blusa de Frio</p>
                 <h2>R$ 109,90</h2>
 
             <form action="filtros/excluir.php" method="post">
