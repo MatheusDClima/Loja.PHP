@@ -109,7 +109,7 @@ require('./sheep_core/config.php');
         <div class="linha">
             <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
                 <div class="col-4">
-                    <a href="ver-produto.html" title="">
+                    <a href="ver-produto.php" title="">
                     <img src="assets/img/produto-1.jpg" alt=""></a>
                     <h4>Blazer Branco</h4>
                         <div class="classificacao">
@@ -125,7 +125,7 @@ require('./sheep_core/config.php');
 
             <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html" title="">
+                <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-2.jpg" alt=""></a>
                 <h4>Camisa Social Branca</h4>
                     <div class="classificacao">
@@ -141,7 +141,7 @@ require('./sheep_core/config.php');
 
         <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html" title="">
+                <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-3.jpg" alt=""></a>
                 <h4>Jaqueta Jeans</h4>
                     <div class="classificacao">
@@ -157,7 +157,7 @@ require('./sheep_core/config.php');
 
          <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html" title="">
+                <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-4.jpg" alt=""></a>
                 <h4>Blusa de Frio</h4>
                     <div class="classificacao">
@@ -179,7 +179,7 @@ require('./sheep_core/config.php');
          <div class="linha">
             <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
                 <div class="col-4">
-                    <a href="ver-produto.html" title="">
+                    <a href="ver-produto.php" title="">
                     <img src="assets/img/produto-5.jpg" alt=""></a>
                     <h4>Calça jeans Rasgada</h4>
                         <div class="classificacao">
@@ -195,7 +195,7 @@ require('./sheep_core/config.php');
 
             <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html" title="">
+                <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-6.jpg" alt=""></a>
                 <h4>Conjunto Moletom Branco</h4>
                     <div class="classificacao">
@@ -211,7 +211,7 @@ require('./sheep_core/config.php');
 
         <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html" title="">
+                <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-7.jpg" alt=""></a>
                 <h4>Camisa Básica s/ Estampa</h4>
                     <div class="classificacao">
@@ -227,7 +227,7 @@ require('./sheep_core/config.php');
 
          <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html">
+                <a href="ver-produto.php">
                 <img src="assets/img/produto-8.jpg" alt=""></a>
                 <h4>Calça Estampada</h4>
                     <div class="classificacao">
@@ -243,7 +243,7 @@ require('./sheep_core/config.php');
 
             <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
             <div class="col-4">
-                <a href="ver-produto.html">
+                <a href="ver-produto.php">
                 <img src="assets/img/produto-9.jpg" alt=""></a>
                 <h4>Jaqueta Bege</h4>
                     <div class="classificacao">
@@ -259,7 +259,7 @@ require('./sheep_core/config.php');
 
          <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
          <div class="col-4">
-            <a href="ver-produto.html"><img src="assets/img/produto-10.jpg" alt=""></a>
+            <a href="ver-produto.php"><img src="assets/img/produto-10.jpg" alt=""></a>
             <h4>Short Bege</h4>
                 <div class="classificacao">
                     <ion-icon name="star"></ion-icon>
@@ -274,7 +274,7 @@ require('./sheep_core/config.php');
 
         <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
         <div class="col-4">
-            <a href="ver-produto.html"><img src="assets/img/produto-11.jpg" alt=""></a>
+            <a href="ver-produto.php"><img src="assets/img/produto-11.jpg" alt=""></a>
             <h4>Gola Polo Azul</h4>
                 <div class="classificacao">
                     <ion-icon name="star"></ion-icon>
@@ -289,7 +289,7 @@ require('./sheep_core/config.php');
 
         <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
         <div class="col-4">
-            <a href="ver-produto.html"><img src="assets/img/produto-12.jpg" alt=""></a>
+            <a href="ver-produto.php"><img src="assets/img/produto-12.jpg" alt=""></a>
             <h4>Conjunto Blazer</h4>
                 <div class="classificacao">
                     <ion-icon name="star"></ion-icon>
