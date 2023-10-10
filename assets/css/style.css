@@ -514,71 +514,66 @@ ul{
 
 /*-----------CARRINHO DE COMPRAS----------*/
 
-.carrinho-compras{
-    margin: 80px auto;
+.barraLateral{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.info-carrinho{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-th{
+.topoCarrinho{
     background-color: var(--cor-padrao);
-    color: var(--cor-fonte);
-    text-align: left;
-    font-weight: normal;
-    padding: 5px;
-}
-
-.info-carrinho small{
-    color: var(--cor-btn-fonte);
-}
-
-td{
-    padding: 10px 5px;
-}
-
-td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-}
-
-td a{
-    color: var(--cor-padrao);
-    font-size: 12px;
-    text-decoration: none;
-}
-
-td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.valor-total{
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--cor-fonte);
 }
 
-.valor-total table{
-    border-top: 3px solid var(--cor-padrao);
-    width: 100%;
-    max-width: 420px;
+.item-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--cor-fonte);
+    border-radius: 3px;
+    margin: 10px 10px;
+    border-bottom: 1px solid #aaa;
 }
 
-td:last-child{
-    text-align: right;
+.linha-imagem{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--cor-padrao);
+    align-items: center;
+    justify-content: center;
 }
 
-th:last-child{
-    text-align: right;
+.img-carrinho{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rodape-carrinho{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
+
+.fa-trash-o:hover{
+    cursor: pointer;
+    color: var(--cor-fonte-corpo-leve);
 }
 
 /*----------MINHA CONTA-----------*/

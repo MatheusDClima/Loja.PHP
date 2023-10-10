@@ -11,7 +11,7 @@ require('./sheep_core/config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/carrinho2.png" type="image/x-icon">
-    <title>Ver Produto</title>
+    <title>Carrinho</title>
 </head>
 
 <body>
@@ -52,11 +52,43 @@ require('./sheep_core/config.php');
 
     </div>
     <!--FIM BANNER MATHEUS DIAS-->
-    
-    <!--INÍCIO CARRINHO DE COMPRAS-->
-        
 
-       
+
+
+     <!--INÍCIO CARRINHO DE COMPRAS-->
+        
+     <div class="barraLateral">
+        
+            <div class="topoCarrinho">
+                <p>Meu Carrinho</p>
+            </div>        
+
+        <!--INÍCIO PRODUTO CARRINHO DE COMPRAS-->
+        <div class="item-carrinho">
+
+            <div class="linha-imagem">
+                <img src="assets/img/produto-4.jpg" alt="" class="img-carrinho">
+            </div>
+
+                <p>Faculdade Projeção</p>
+                <h2>R$ 109,90</h2>
+
+            <form action="filtros/excluir.php" method="post">
+                <input type="hidden" name="id_produto" value="">
+                <button type="submit" style="border:none; background:none;"><i class="fa fa-trash-o"></i></button>
+            </form>
+
+        </div>
+        <!--FIM PRODUTO CARRINHO DE COMPRAS-->
+
+        <div class="item-carrinho-vazio">Seu carrinho está vazio!</div>
+
+        <div class="rodape-carrinho">
+            <h3>Total</h3>
+            <h2>R$ 497,00</h2>
+        </div>
+
+    </div>
     <!--FIM CARRINHO DE COMPRAS-->
 
 
