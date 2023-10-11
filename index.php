@@ -102,7 +102,7 @@ require('./sheep_core/config.php');
     <!--INÍCIO PRODUTOS EM DESTAQUE-->
      <div class="corpo-categorias">
 
-        <br><br></BR><h2 class="titulo">Produtos em Destaque</h2>
+        <h2 class="titulo">Produtos em Destaque</h2>
 
 
        <!--INCÍCIO LINHA PRODUTOS EM DESTAQUE--> 

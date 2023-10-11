@@ -34,7 +34,7 @@ body{
 
 
 .banner .linha{
-    margin-top: -35px;
+    margin-top: 0;
 }
 
 .container {
@@ -99,7 +99,7 @@ p {
 
 
 .col-2{
-    flex-basis: 50%;
+    flex-basis: 37%;
     min-width: 300px;
     color: var(--cor-fonte);/*mudar para color: var(--cor-fonte);*/
 }
@@ -109,7 +109,7 @@ p {
 }
 
 .col-2 h1{
-    font-size: 50px;
+    font-size: 37px;
     line-height: 60px;
     margin: 25px 0;
 }
@@ -141,12 +141,12 @@ p {
 .col-2 img{
     max-width: 100%;
     height: auto;
-    padding: 80px;
+    padding: 0;
     /*margin-bottom: -33px;*/
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
     align-items: center; /* Centralizar verticalmente */
-    margin: 0 -0 -80px 30px;;
+    
 }
 
 
@@ -184,9 +184,9 @@ p {
 
 .col-4 {
     flex-basis: 25%;
-    min-width: 200px;
+    min-width: 160px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     transition: transform 0.4s; /*aumento mais suave ao passar o mouse encima*/
 }
 
@@ -203,7 +203,7 @@ p {
 .titulo{
     position: relative;
     line-height: 60px;
-    margin: 0 auto 80px;
+    margin: 30px auto 40px;
     text-align: center;
     color: var(--cor-fonte-corpo);
 }
@@ -396,7 +396,7 @@ ul{
 }
 
 .linha2 {
-    margin: 100px auto 50px;
+    margin: 60px auto 50px;
     justify-content: space-between;
 }
 
@@ -437,10 +437,15 @@ ul{
 
 .ver-produto .col-2 h1{
     color: var(--cor-btn-fonte);
+    font-size: 20px;
+    background: wheat; 
+    margin: auto;
+    text-align: center;
 }
 
 .ver-produto .col-2{
     color: var(--cor-btn-fonte);
+    padding: 20px;
 }
 
 .ver-produto .col-2 p{
@@ -457,10 +462,6 @@ ul{
     height: 450px;
     object-fit: cover;
     object-position: top;
-}
-
-.ver-produto .col-2{
-    padding: 20px;
 }
 
 .ver-produto h4{
@@ -506,7 +507,8 @@ ul{
 }
 
 .ver-produto p{
-    font-size: 13px;
+    font-size: 12px;
+    margin-bottom: 18px;
 }
 
 .img-linha{
@@ -700,13 +702,13 @@ ul{
     }*/
 
     .container{
-        padding: 15px;
-        margin: -30px 32px 0;
+        padding: 0px;
+        margin: -40px 32px 0;
     }
 
     nav ul{
         position: absolute;
-        top: 125px;
+        top: 80px;
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
@@ -727,7 +729,7 @@ ul{
 
     .logo img{
         margin-top: -50px;
-        margin: -17px 0 -22px -40px;
+        margin: -6px 0 -22px -70px;
     }
 
     .menu-celular{
@@ -770,18 +772,27 @@ ul{
         justify-content: space-around;
     }
 
+    .ver-produto select{
+        margin-left: 43px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
 }
 
 /*-------------CELULAR até a máxima da tela de 600-------------*/
 
 @media only screen and (max-width:600px){
+
     .linha{
         text-align: center;
     }
 
-    .col-2, .col-3, .col-4{
+    /*.col-2, .col-3, .col-4{
         flex-basis: 100%;
-    }
+    }*/
 
     .col-2 h1{
         font-size: 28px;
@@ -840,13 +851,13 @@ ul{
     }
     
     .corpo-categorias {
-        padding: 60px;
-        margin-top: -35px;
+        padding: 0px;
+        margin-top: 0;
     }
 
     .ofertas .corpo-categorias{
         margin-top: 0;
-        padding: 15px;
+        padding: 40px;
     }
     
     .ver-produto .col-2{
