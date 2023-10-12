@@ -127,7 +127,7 @@ require('./sheep_core/config.php');
             <div class="col-4">
                 <a href="ver-produto.php" title="">
                 <img src="assets/img/produto-2.jpg" alt=""></a>
-                <h4>Camisa Social Branca</h4>
+                <h4>Camisa Social</h4>
                     <div class="classificacao">
                         <ion-icon name="star"></ion-icon>
                         <ion-icon name="star"></ion-icon>
