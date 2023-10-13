@@ -86,7 +86,7 @@ require('./sheep_core/config.php');
                     <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
                     <div class="col-4">
                         <a href="ver-produto.php"><img src="assets/img/produto-2.jpg" alt=""></a>
-                        <h4>Camisa Social Branca
+                        <h4>Camisa Social
                         </h4>
                             <div class="classificacao">
                                 <ion-icon name="star"></ion-icon>

@@ -528,6 +528,8 @@ ul{
     border-radius: 5px;
     background-color: #eee;
     margin: auto;
+    margin-bottom: 110px;
+    margin-top: 110px;
     padding: 15px;
     text-align: center;
 }

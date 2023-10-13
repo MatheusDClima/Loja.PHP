@@ -23,7 +23,7 @@ class Produtos
                 $enviaFoto->Image($this->Data['capa'], date('Y-m-d').time());
              }
              if(isset($enviaFoto) && $enviaFoto->getResult()){
-                $this->Data['capa'] = $this->Data['capa'] != null ?  $enviaFoto->getResult() : null;
+                $this->Data['capa'] = $this->Data['capa'] != null ? $enviaFoto->getResult() : null;
                 
                     $this->Banco();
                     $this->Criar();
