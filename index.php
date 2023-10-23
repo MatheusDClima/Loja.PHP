@@ -43,61 +43,13 @@ require('./sheep_core/config.php');
 
                     <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
 
-                </div>
-            <!--FIM NAVEGAÇÃO TOPO-->
-
-                <!--INÍCIO TEXTO DO BANNER-->
-                    <div class="linha">
-
-                        <div class="col-2">
-                            <h1>Escolha um novo <br><span>estilo de vida!</span></h1>
-                            <p><small>Moda que inspira, <br><span>estilo que faz a diferença</span></small></p>
-                            <br><a href="" class="btn">Mais informações &#8594;</a>
-                        </div>
-
-                        
-                        <div class="col-2">
-                            <img src="assets/img/casal-banner-cortado.png" alt="" class="casal-banner">
-                        </div>
-                        
-                    </div>
-                <!--FIM TEXTO DO BANNER-->
-
-         </div>
-       <!--FIM CONTAINER--> 
-
-     </div>
-    <!--FIM BANNER MATHEUS DIAS-->
-
-   <!--INÍCIO CORPO CATEGORIAS EM DESTAQUE-->
-    <!--<div class="categorias">
-
-        <!--INÍCIO CORPO CATEGORIAS EM DESTAQUE-->
-        <!--    <div class="corpo-categorias">
-
-                <!--INÍCIO LINHA DO CORPO CATEGORIAS EM DESTAQUE-->
-            <!--     <div class="linha">
-
-                    <div class="col-3">
-                        <img src="assets/img/estilo-banner.png" alt="">
-                    </div>
-                    
-                    <div class="col-3">
-                        <img src="assets/img/nike.png" alt="">
-                    </div>
-                    
-                    <div class="col-3">
-                        <img src="assets/img/estilo-banner-mulher.png" alt="">
-                    </div>
-
                  </div>
-                <!--FIM LINHA DO CORPO CATEGORIAS EM DESTAQUE-->
+               <!--FIM NAVEGAÇÃO TOPO-->
+        </div>
+       <!--FIM CONTAINER-->
+    </div>
+  <!--FIM BANNER-->  
 
-           <!-- </div>
-        <!--FIM CORPO CATEGORIAS EM DESTAQUE-->
-
-    <!-- </div>
-    <!--FIM CATEGORIAS EM DESTAQUE-->
 
     <!--INÍCIO PRODUTOS EM DESTAQUE-->
      <div class="corpo-categorias">
@@ -319,7 +271,6 @@ require('./sheep_core/config.php');
                 </div>
 
                 <div class="col-2">
-                    <p>Produto exclusivo da loja <span>MD</span>Store</p>
                     <h1>Pise com <span>Estilo</span> e <span>Confiança</span></h1>
                     <small>Dê asas ao seu estilo com os <span>tênis Nike</span> - o equilíbrio perfeito entre moda e funcionalidade.</small>
                     <br><br><a href="" class="btn">Comprar agora &#8594;</a>
