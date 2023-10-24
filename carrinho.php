@@ -35,7 +35,7 @@ require('./sheep_core/config.php');
                 <nav>
                     <ul id="MenuItens">
                         <li><a href="index.php" title="">Início</a></li>
-                        <li><a href="produtos.php" title="">Produtos</a></li>
+                        
                         <li><a href="minha-conta.php" title="">Minha Conta</a></li>
                     </ul>
                 </nav>
@@ -76,11 +76,7 @@ require('./sheep_core/config.php');
             $ler->Leitura('produtos', "WHERE id = :id ORDER BY data DESC", "id={$carts['id_produto']}");
             if ($ler->getResultado()) {
                 foreach ($ler->getResultado() as $produto) {
-                    $produto = (object) $produto;
-
-           
-                    
-
+                    $produto = (object) $produto;                    
         ?>
         <!--INÍCIO PRODUTO CARRINHO DE COMPRAS-->
         <div class="item-carrinho">

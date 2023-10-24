@@ -33,14 +33,12 @@ require('./sheep_core/config.php');
                 <nav>
                     <ul id="MenuItens">
                         <li><a href="index.php" title="">Início</a></li>
-                        <li><a href="produtos.php" title="">Produtos</a></li>                      
+                                              
                         <li><a href="minha-conta.php" title="">Minha Conta</a></li>
                     </ul>
                 </nav>
                 <!--FIM MENU NAVEGAÇÃO TOPO-->
-                <a href="carrinho.php" title="">
-                <img src="assets/img/carrinho2.png" alt="" width="30px" height="30px" class="carrinho-img">
-                </a>
+             
 
                 <img src="assets/img/menu-preto.png" alt="" class="menu-celular" onclick="menucelular()">
 

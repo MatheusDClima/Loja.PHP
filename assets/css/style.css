@@ -127,10 +127,11 @@ p {
     text-decoration: none;
     color: var(--cor-btn-hover);
     background: var(--cor-fonte-corpo-leve);
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
+    padding: 4px 13px;
+    margin: 8px 0px;
+    border-radius: 5px;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -187,11 +188,11 @@ p {
     min-width: 160px;
     padding: 10px;
     margin-bottom: 20px;
-    transition: transform 0.4s; /*aumento mais suave ao passar o mouse encima*/
+    transition: transform 0.2s; /*aumento mais suave ao passar o mouse encima*/
 }
 
 .col-4:hover{
-    transform: scale(1.1); /*Aumentar quando passar o mouse encima...a tag transform:rotate(45deg); vai girar a imagem ao passar o mouse encima*/
+    transform: scale(1.03); /*Aumentar quando passar o mouse encima...a tag transform:rotate(45deg); vai girar a imagem ao passar o mouse encima*/
 }
 
 .col-4 img{
@@ -431,95 +432,7 @@ ul{
 
 /*----------DETALHES DO PRODUTO-----------*/
 
-.ver-produto{
-    margin-top: 40px;
-}
 
-.ver-produto .col-2 h1{
-    color: var(--cor-btn-fonte);
-    font-size: 20px;
-    background: wheat; 
-    margin: auto;
-    text-align: center;
-}
-
-.ver-produto .col-2{
-    color: var(--cor-btn-fonte);
-    padding: 20px;
-}
-
-.ver-produto .col-2 p{
-    color: var(--cor-btn-fonte);
-}
-
-.ver-produto .col-2 img{
-    width: 100%;
-    padding: 0;
-}
-
-.ver-produto #produtoImg{
-    width: 600px;
-    height: 450px;
-    object-fit: cover;
-    object-position: top;
-}
-
-.ver-produto h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.ver-produto select{
-    display: block;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid var(--cor-padrao);
-}
-
-.ver-produto select:focus{
-    outline: none;
-}
-
-.ver-produto input{
-    width: 50px;
-    height: 40px;
-    margin-right: 10px;
-    padding-left: 10px;
-    font-size: 20px;
-    border: 1px solid var(--cor-padrao);
-}
-
-.ver-produto input:focus{
-    outline: none;
-}
-
-.ver-produto .btn{
-    border: none;
-    background-color: var(--cor-padrao);
-    height: 42px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.ver-produto .btn:hover{
-    background-color: var(--cor-btn-hover);
-}
-
-.ver-produto p{
-    font-size: 12px;
-    margin-bottom: 18px;
-}
-
-.img-linha{
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
 
 /*-----------CARRINHO DE COMPRAS----------*/
 
