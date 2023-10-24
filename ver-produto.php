@@ -16,6 +16,13 @@ require('./sheep_core/config.php');
 
 <body>
 
+    <?php 
+
+        $cart = new ler();
+        $cart->Leitura('carrinho');
+
+    ?>
+
     <!--INÍCIO BANNER MATHEUS DIAS-->
     <div class="novoMenu">
 
@@ -41,7 +48,8 @@ require('./sheep_core/config.php');
 
                 <a href="carrinho.php" title="">
                     <img src="assets/img/carrinho2.png" alt="" width="30px" height="30px" class="carrinho-img">
-                    </a>
+                </a>
+                <p><?=$cart->getContaLinhas() > 0 ? $cart->getContaLinhas() : 0?></p>
 
                 <img src="assets/img/menu-preto.png" alt="" class="menu-celular" onclick="menucelular()">
 
@@ -59,69 +67,87 @@ require('./sheep_core/config.php');
     <div class="corpo-categorias ver-produto">
         <div class="linha">
 
-            <div class="col-2">
-                <img src="assets/img/produto-4.jpg" alt="" id="produtoImg">
-                <!--INÍCIO LINHA GALERIA-->
-                <div class="img-linha">
+            <?php
+            $ler = new ler();
+            $ler->Leitura('produtos', "ORDER BY data DESC");
+            if ($ler->getResultado()) {
+                foreach ($ler->getResultado() as $produto) {
+                    $produto = (object) $produto;
 
-                    <!--INÍCIO ITEM GALERIA-->
-                    <div class="img-col">
-                        <img src="assets/img/produto-4.jpg" alt="" width="100%" class="produtoMiniatura">
+            ?>
+
+
+
+                    <div class="col-2">
+                        <img src="<?=HOME?>/uploads/<?=$produto->capa?>" alt="<?=$produto->nome?>" id="produtoImg">
+                        <!--INÍCIO LINHA GALERIA-->
+                        <div class="img-linha">
+
+                            <!--INÍCIO ITEM GALERIA-->
+                            <div class="img-col">
+                                <img src="assets/img/produto-4.jpg" alt="" width="100%" class="produtoMiniatura">
+                            </div>
+                            <!--FIM ITEM GALERIA-->
+
+                            <!--INÍCIO ITEM GALERIA-->
+                            <div class="img-col">
+                                <img src="assets/img/galeria-2.jpg" alt="" width="100%" class="produtoMiniatura">
+                            </div>
+                            <!--FIM ITEM GALERIA-->
+
+                            <!--INÍCIO ITEM GALERIA-->
+                            <div class="img-col">
+                                <img src="assets/img/galeria-3.jpg" alt="" width="100%" class="produtoMiniatura">
+                            </div>
+                            <!--FIM ITEM GALERIA-->
+
+                            <!--INÍCIO ITEM GALERIA-->
+                            <div class="img-col">
+                                <img src="assets/img/galeria-4.jpg" alt="" width="100%" class="produtoMiniatura">
+                            </div>
+                            <!--FIM ITEM GALERIA-->
+
+                        </div>
+                        <!--FIM LINHA GALERIA-->
+
+                <?php
+                }
+            }
+
+                ?>
+
+
+
                     </div>
-                    <!--FIM ITEM GALERIA-->
 
-                    <!--INÍCIO ITEM GALERIA-->
-                    <div class="img-col">
-                        <img src="assets/img/galeria-2.jpg" alt="" width="100%" class="produtoMiniatura">
+
+
+                    <div class="col-2">
+                        <p><?=$produto->nome?></p>
+                        <h1>Compre com desconto</h1>
+                        <h4>R$ <?=$produto->valor?></h4>
+                        <form action="" method="post">
+
+                            <select name="" id="">
+                                <option value="">Selecione o Tamanho</option>
+                                <option value="">P</option>
+                                <option value="">M</option>
+                                <option value="">G</option>
+                                <option value="">GG</option>
+                                <option value="">XG</option>
+                            </select>
+
+                            <input type="hidden" name="id_produto" value="<?=$produto->id?>">
+                            <input type="hidden" name="valor" value="<?=$produto->valor?>">
+
+
+                            <button type="submit" class="btn" name="addcarrinho">Adicionar ao Carrinho</button>
+
+
+                        </form>
+                        <h3>Descrição:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam aperiam, explicabo repellat, voluptates officiis nostrum nemo consequuntur tempore omnis quibusdam dolorum neque, reprehenderit dolores! Culpa omnis expedita eveniet veniam?</p>
                     </div>
-                    <!--FIM ITEM GALERIA-->
-
-                    <!--INÍCIO ITEM GALERIA-->
-                    <div class="img-col">
-                        <img src="assets/img/galeria-3.jpg" alt="" width="100%" class="produtoMiniatura">
-                    </div>
-                    <!--FIM ITEM GALERIA-->
-
-                    <!--INÍCIO ITEM GALERIA-->
-                    <div class="img-col">
-                        <img src="assets/img/galeria-4.jpg" alt="" width="100%" class="produtoMiniatura">
-                    </div>
-                    <!--FIM ITEM GALERIA-->
-
-                </div>
-                <!--FIM LINHA GALERIA-->
-
-                
-
-            </div>
-
-            
-            
-            <div class="col-2">
-                <p>Blusa de frio manga longa moletinho</p>
-                <h1>Compre com desconto</h1>
-                <h4>R$400,00</h4>
-                <form action="" method="post">
-
-                    <select name="" id="">
-                        <option value="">Selecione o Tamanho</option>
-                        <option value="">P</option>
-                        <option value="">M</option>
-                        <option value="">G</option>
-                        <option value="">GG</option>
-                        <option value="">XG</option>
-                    </select>
-
-                    <input type="number" name="" id="1">
-
-                 
-                    <button type="submit" class="btn">Adicionar ao Carrinho</button>
-                
-
-                </form>
-                <h3>Descrição:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam aperiam, explicabo repellat, voluptates officiis nostrum nemo consequuntur tempore omnis quibusdam dolorum neque, reprehenderit dolores! Culpa omnis expedita eveniet veniam?</p>
-            </div>
 
         </div>
     </div>

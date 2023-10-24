@@ -16,6 +16,8 @@ require('./sheep_core/config.php');
 
 <body>
 
+
+
     <!--INÍCIO BANNER MATHEUS DIAS-->
     <div class="novoMenu">
 
@@ -63,25 +65,53 @@ require('./sheep_core/config.php');
                 <p>Meu Carrinho</p>
             </div>        
 
+        
+        <?php 
+
+            if($cart->getContaLinhas() > 0){
+                foreach($cart->getResultado() as $carts){
+
+                   
+            $ler = new ler();
+            $ler->Leitura('produtos', "WHERE id = :id ORDER BY data DESC", "id={$carts['id_produto']}");
+            if ($ler->getResultado()) {
+                foreach ($ler->getResultado() as $produto) {
+                    $produto = (object) $produto;
+
+           
+                    
+
+        ?>
         <!--INÍCIO PRODUTO CARRINHO DE COMPRAS-->
         <div class="item-carrinho">
 
             <div class="linha-imagem">
-                <img src="assets/img/produto-4.jpg" alt="" class="img-carrinho">
+                <img src="<?=HOME?>/uploads/<?=$produto->capa?>" alt="<?=$produto->nome?>" class="img-carrinho">
             </div>
 
-                <p>Blusa de Frio</p>
-                <h2>R$ 109,90</h2>
+                <p><?=$produto->nome?></p>
+                <h2>R$ <?=$produto->valor?></h2>
 
             <form action="filtros/excluir.php" method="post">
-                <input type="hidden" name="id_produto" value="">
+                <input type="hidden" name="id_produto" value="<?=$produto->id?>">
                 <button type="submit" style="border:none; background:none;"><i class="fa fa-trash-o"></i></button>
             </form>
 
         </div>
         <!--FIM PRODUTO CARRINHO DE COMPRAS-->
+        
+        <?php 
 
-        <div class="item-carrinho-vazio">Seu carrinho está vazio!</div>
+                    }
+                } 
+            }
+            }else{
+        ?>
+        
+          <div class="item-carrinho-vazio">Seu carrinho está vazio!</div>
+          <?php        
+            }
+        ?>
 
         <div class="rodape-carrinho">
             <h3>Total</h3>

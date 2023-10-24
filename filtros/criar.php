@@ -3,18 +3,18 @@
 ob_start();
 require('../../sheep_core/config.php');
 
-$produto = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-if(isset($produto['criarProduto'])){
-    unset($produto['criarProduto']);
-    $produto['capa'] = ($_FILES['capa']['tmp_name'] ? $FILES['capa'] : null);
+$carrinho = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+if(isset($carrinho['addcarrinho'])){
+    unset($carrinho['addcarrinho']);
+    $carrinho['capa'] = ($_FILES['capa']['tmp_name'] ? $FILES['capa'] : null);
 
-    $salvar = new Produtos();
-    $salvar->CriarProduto($produto);
+    $salvar = new carrinho();
+    $salvar->addCarrinho($carrinho);
 
     if($salvar->getResultado()){
-        header("Location: ".HOME."/painel/index.php?sucesso=true");
+        header("Location: ".HOME."/index.php?sucesso=true");
     }else{
-        header("Location: ".HOME."/painel/index.php?erro=true");
+        header("Location: ".HOME."/index.php?erro=true");
     }
 }
 
