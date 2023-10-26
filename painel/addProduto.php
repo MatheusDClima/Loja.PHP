@@ -22,7 +22,7 @@ require('../sheep_core/config.php');
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Maykon Silveira</title>
+        <title>Adicionar Produtos</title>
         <link rel="stylesheet" href="assets/css/app.min.css">
       
         <link rel="stylesheet" href="assets/css/style.css">
@@ -97,7 +97,7 @@ require('../sheep_core/config.php');
                     </div>
 
                   </div>
-                  <p><a href="https://maykonsilveira.com.br">EAD MAykon Silveira</a></p>
+               
                 </div>
               </div>
             </div>

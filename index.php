@@ -59,6 +59,78 @@ require('./sheep_core/config.php');
     </div>
     <!--FIM BANNER-->
 
+     <!--INÍCIO CARRINHO DE COMPRAS-->
+        
+     <div class="barraLateral">
+
+            <div class="topoCarrinho">
+                <p>Meu Carrinho</p>
+            </div>        
+
+        
+        <?php 
+
+            if($cart->getContaLinhas() > 0){
+                foreach($cart->getResultado() as $carts){
+
+                   
+            $ler = new ler();
+            $ler->Leitura('produtos', "WHERE id = :id ORDER BY data DESC", "id={$carts['id_produto']}");
+            if ($ler->getResultado()) {
+                foreach ($ler->getResultado() as $produto) {
+                    $produto = (object) $produto;                    
+        ?>
+        <!--INÍCIO PRODUTO CARRINHO DE COMPRAS-->
+        <div class="item-carrinho">
+
+            <div class="linha-imagem">
+                <img src="<?=HOME?>/uploads/<?=$produto->capa?>" alt="<?=$produto->nome?>" class="img-carrinho">
+            </div>
+
+                <p><?=$produto->nome?></p>
+                <h2>R$ <?=$produto->valor?></h2>
+
+            <form action="filtros/excluir.php" method="post">
+                <input type="hidden" name="id_produto" value="<?=$produto->id?>">
+                <button type="submit" style="border:none; background:none;"><i class="fa fa-trash-o"></i></button>
+            </form>
+
+        </div>
+        <!--FIM PRODUTO CARRINHO DE COMPRAS-->
+        
+        <?php 
+
+                    }
+                } 
+            }
+            }else{
+        ?>
+        
+          <div class="item-carrinho-vazio">Seu carrinho está vazio!</div>
+          <?php        
+            }
+        ?>
+
+        <?php 
+            $totalCarrinho = new ler();
+            $totalCarrinho->LeituraCompleta("SELECT SUM(valor) as total from carrinho");
+            if($totalCarrinho->getResultado()){
+                $totalCompras = number_format($totalCarrinho->getResultado()[0]['total'], 2,',','.');
+            }else{
+                $totalCompras = 0;
+            }
+        
+        ?>
+
+        <div class="rodape-carrinho">
+            <h3>Total</h3>
+            <h2>R$ <?=$totalCompras?></h2>
+        </div>
+
+    </div>
+    <!--FIM CARRINHO DE COMPRAS-->
+
+
 
     <!--INÍCIO PRODUTOS EM DESTAQUE-->
     <div class="corpo-categorias">
@@ -70,6 +142,7 @@ require('./sheep_core/config.php');
         <div class="linha">
 
             <?php
+
             $ler = new ler();
             $ler->Leitura('produtos', "ORDER BY data DESC");
             if ($ler->getResultado()) {
@@ -80,7 +153,8 @@ require('./sheep_core/config.php');
                 
                 <!--INÍCIO ITEM PRODUTOS EM DESTAQUE-->
                     
-                        <div class="col-4">
+                     <div class="col-4">
+                        <form action="filtros/criar.php" method="post">
                             <div class="imgProduto">
                                 <img src="<?=HOME?>/uploads/<?=$produto->capa?>" alt="<?=$produto->nome?>" id="produtoImg">
                             </div>
@@ -96,13 +170,16 @@ require('./sheep_core/config.php');
                             <input type="hidden" name="id_produto" value="<?= $produto->id ?>">
                             <input type="hidden" name="valor" value="<?= $produto->valor ?>">
                             <button type="submit" class="btn" name="addcarrinho">Adicionar ao Carrinho</button>
-                        </div>
+                        </form>
+                      </div>
                     
                     <!--FIM ITEM PRODUTOS EM DESTAQUE-->
 
              <?php
+                    
                 }
             }
+        
 
             ?>
 
@@ -111,6 +188,8 @@ require('./sheep_core/config.php');
 
     </div>
     <!--FIM PRODUTOS EM DESTAQUE-->
+
+    
 
     <!--INÍCIO OFERTAS PRODUTOS EM DESTAQUE-->
     <div class="ofertas">

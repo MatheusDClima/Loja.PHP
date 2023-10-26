@@ -1,7 +1,7 @@
 <?php
 
 ob_start();
-require('./sheep_core/config.php');
+require('../sheep_core/config.php');
 
 $del = filter_input(INPUT_POST, 'id_produto', FILTER_VALIDATE_INT);
 
