@@ -109,9 +109,20 @@ require('./sheep_core/config.php');
             }
         ?>
 
+        <?php 
+            $totalCarrinho = new ler();
+            $totalCarrinho->LeituraCompleta("SELECT SUM(valor) as total from carrinho");
+            if($totalCarrinho->getResultado()){
+                $totalCompras = number_format($totalCarrinho->getResultado()[0]['total'], 2,',','.');
+            }else{
+                $totalCompras = 0;
+            }
+        
+        ?>
+
         <div class="rodape-carrinho">
             <h3>Total</h3>
-            <h2>R$ 497,00</h2>
+            <h2>R$ <?=$totalCompras?></h2>
         </div>
 
     </div>

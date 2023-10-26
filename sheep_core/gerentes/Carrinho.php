@@ -31,6 +31,7 @@
             $this->Data = array_map('htmlspecialchars', $this->Data);
             $this->Data = array_map('trim', $this->Data);
             preg_replace('/[^[:alnum:]@]/', '',  $this->Data);
+            
             $this->Data['id_produto'] = (int) $this->Data['id_produto'];
             $this->Data['valor'] = (string) $this->Data['valor'];
             $this->Data['data'] = date('Y-m-d H:i:s');
