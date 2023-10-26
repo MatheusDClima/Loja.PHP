@@ -188,6 +188,7 @@ p {
     min-width: 160px;
     padding: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
     transition: transform 0.2s; /*aumento mais suave ao passar o mouse encima*/
 }
 
