@@ -45,9 +45,9 @@ require('./sheep_core/config.php');
                 </nav>
                 <!--FIM MENU NAVEGAÇÃO TOPO-->
 
-                <a href="carrinho.php" title="">
-                    <img src="assets/img/carrinho.png" alt="" width="30px" height="30px" class="carrinho-img">
-                </a>
+                
+                <img src="assets/img/carrinho.png" alt="" width="30px" height="30px" class="carrinho-img">
+                
                 <p><?= $cart->getContaLinhas() > 0 ? $cart->getContaLinhas() : 0 ?></p>
 
                 <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
