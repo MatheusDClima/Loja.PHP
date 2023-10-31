@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:wght@200;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:wght@200;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -234,7 +236,7 @@ h4{
 }
 
 .classificacao ion-icon{  /*--CORES DAS ESTRELAS--*/
-    color: var(--cor-padrao);
+    color: goldenrod;
     
 }
 
@@ -277,18 +279,19 @@ small{
     width: 100px;
     border-radius: 50px;
     margin-top: 20px;
-    border: 2px solid var(--cor-padrao);
+    border: 2px solid goldenrod;
 }
 
 .depoimento-icone{
     font-size: 34px;
-    color: var(--cor-padrao);
+    color: goldenrod;
 }
 
 .col-3 p{
     font-size: 13px;
     color: var(--cor-fonte-corpo-leve);
     margin: 12px 0;
+    text-align: center;
 }
 
 .depoimentos .col-3 h3{
@@ -449,8 +452,9 @@ ul{
 }
 
 .barraLateral h2{
+    font-family: 'Inter', bold;
     font-size: 20px;
-    color: var(--cor-padrao);
+    color: #000000;
 }
 
 .topoCarrinho{
