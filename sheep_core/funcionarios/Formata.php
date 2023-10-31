@@ -1,21 +1,5 @@
 <?php
-/**********************************************************************
- * ********************************************************************
- * GERENTE DE FORMATAÇÃO MAYKONSILVEIRA.COM.BR E MAYKON SILVEIRA
- * 
- * ********************************************************************
- * MAYKONSILVEIRA.COM.BR DEREICIONANDO VOCÊ PARA O CAMINHO DO SUCESSO #*
- * *************MAYKON***SILVEIRA**************************************
- * *************sheep**PHP***********************************
- * ********************************************************************
- * TUDO AQUI FOI CRIADO NO DIA 01-10-2021 POR MAYKON SILVEIRA
- * TODOS OS DIREITOS RESERVADOS E CÓDIGO FONTE RASTREADO COM ARQUIVOS 
- * CRIADO POR MAYKONSILVEIRA.COM.BR DESDE 2007 *********
- * TODA SABEDORIA PARA CRIAR ESTES SISTEMAS VEM DO SANTO E ETERNOR PAI
- * O SANTO SENHOR DEUS DE ABRAÃO, ISSAC E JACÓ E DO MEU ÚNICO SENHOR 
- * O MESSIAS NOSSO SALVADOR, POIS A GLROIA É DO PAI E DO FILHO PARA SEMPRE
- * ********************************************************************
- */
+
 class Formata {
 
    private static $Data;
@@ -89,7 +73,7 @@ class Formata {
      *
      * 
      * FAZ O COMPRIMENTO AUTOMÁTICO EXEMPLO BOM DIA, BOA TARDE E BOA NOITE DE ACORDO COM A HORA DO DIA
-     * POR MAYKON SILVEIRA MAYKONSILVEIRA.COM.BR
+     
      * 
      */
     public static function Comprimento(){
@@ -148,7 +132,7 @@ class Formata {
     /**
      *
      * 
-     * CONVERTE O MÊS EM ESCRITA POR MAYKON SILVEIRA MAYKONSILVEIRA.COM.BR
+     * CONVERTE O MÊS EM ESCRITA 
      * 
      */
     public static function Mes($mes){

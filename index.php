@@ -92,7 +92,8 @@ require('./sheep_core/config.php');
 
             <form action="filtros/excluir.php" method="post">
                 <input type="hidden" name="id_produto" value="<?=$produto->id?>">
-                <button type="submit" style="border:none; background:none;"><i class="fa fa-trash-o"></i></button>
+                <button type="submit" style="border:none; background:none;"> <i class="fa fa-trash-o" aria-hidden="true">Remover</i>
+                </button>
             </form>
 
         </div>
@@ -166,7 +167,7 @@ require('./sheep_core/config.php');
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
                             </div>
-                            <p>R$ <?=$produto->valor?></p>
+                            <p>R$ <?=$produto->valor?>,00</p>
                             <input type="hidden" name="id_produto" value="<?= $produto->id ?>">
                             <input type="hidden" name="valor" value="<?= $produto->valor ?>">
                             <button type="submit" class="btn" name="addcarrinho">Adicionar ao Carrinho</button>

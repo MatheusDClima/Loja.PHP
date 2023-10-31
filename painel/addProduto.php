@@ -1,18 +1,6 @@
 <?php
 
-/**********************************************************************
- * ********************************************************************
- * CAMADA PRINCIPAL MAYKONSILVEIRA.COM.BR E MAYKON SILVEIRA
- * 
- * ********************************************************************
-* MAYKONSILVEIRA.COM.BR DEREICIONANDO VOCÊ PARA O CAMINHO DO SUCESSO #*
- * *************MAYKON***SILVEIRA**************************************
- * *************sheep**TECHNOLOGIES***********************************
- * ********************************************************************
- *
- * ********************************************************************
- * ********************************************************************
- */
+
 ob_start();
 require('../sheep_core/config.php');
 ?>
@@ -26,7 +14,7 @@ require('../sheep_core/config.php');
         <link rel="stylesheet" href="assets/css/app.min.css">
       
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- FIM DO CSS  SHEEP FRAMEWORK PHP - MAYKONSILVEIRA.COM.BR -->
+        <!-- FIM DO CSS -->
 </head>
 <body>
 

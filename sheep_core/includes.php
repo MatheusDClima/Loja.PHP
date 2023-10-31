@@ -20,25 +20,7 @@ define('sheep','<center><h2>Atenção!</h2></center><br>'
         . '<b>Maykon Silveira</b><br>'
         . '<p>Framework maykonsilveira.com.br e o código de fonte são patenteados. </p>');
 
-/**********************************************************************
- * ********************************************************************
- * AUTO LOAD DO SITE MAYKONSILVEIRA.COM.BR E MAYKON SILVEIRA
- * 
- * ********************************************************************
- * ********************************************************************
-* MAYKONSILVEIRA.COM.BR DEREICIONANDO VOCÊ PARA O CAMINHO DO SUCESSO #*
- * *************MAYKON***SILVEIRA**************************************
- * *************sheep**TECHNOLOGIES***********************************
- * ********************************************************************
- * TUDO AQUI FOI CRIADO NO DIA 28-09-2021 POR MAYKON SILVEIRA
- * TODOS OS DIREITOS RESERVADOS E CÓDIGO FONTE RASTREADO COM ARQUIVOS 
- * CRIADO POR MAYKONSILVEIRA.COM.BR DESDE 2007 *********
- * TODA SABEDORIA PARA CRIAR ESTES SISTEMAS VEM DO SANTO E ETERNOR PAI
- * O SANTO SENHOR DEUS DE ABRAÃO, ISSAC E JACÓ E DO MEU ÚNICO SENHOR 
- * O MESSIAS NOSSO SALVADOR, POIS A GLROIA É DO PAI E DO FILHO PARA SEMPRE
- * ********************************************************************
- * ********************************************************************
- */
+
 function sheep_classes($sheepClasses) {
 
     $sheepDiretorio = ['diretor', 'funcionarios',  'gerentes_operacionais', 'gerentes'];
@@ -82,7 +64,7 @@ spl_autoload_register("sheep_classes");
 
 
 
-// verifica se e http ou https por Maykon Silveira ####################
+// verifica se e http ou https  ####################
 if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ) {
     //if( isset(filter_input(INPUT_SERVER, 'HTTPS', FILTER_SANITIZE_STRIPPED)) && filter_input(INPUT_SERVER, 'HTTPS', FILTER_SANITIZE_STRIPPED) == 'on' ) {
          $https = 'https://';
