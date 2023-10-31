@@ -96,7 +96,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: left; /*adicionei depois*/
+    text-align: center; /*adicionei depois*/
 }
 
 
@@ -107,7 +107,7 @@ p {
 }
 
 .col-2 h1, p {
-    text-align: left;
+    text-align: center;
 }
 
 .col-2 h1{
@@ -214,7 +214,7 @@ p {
 
 .titulo::after{ /*--LINHA ABAIXO DO TITULO--*/
     content: '';
-    background-color: var(--cor-padrao);
+    background-color: goldenrod;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -246,6 +246,14 @@ h4{
     background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
     margin-top: 80px;
     padding: 1px 0;
+}
+
+.ofertas .col-2 {
+    text-align: left;
+}
+
+.ofertas .col-2 h1{
+    text-align: left;
 }
 
 .col-2 .oferta-img{

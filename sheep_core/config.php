@@ -2,7 +2,8 @@
 
 
 //configurações do bando de dados
-define('SHEEP_URL', 'localhost/Loja.PHP/cart/');//ou dominio exemplo: maykonsilveira.com.br
+define('SHEEP_URL', 'localhost/Loja.PHP/cart/');//ou 
+
 define('SHEEP_HOST','localhost');
 define('SHEEP_USER','root');
 define('SHEEP_SENHA','');
@@ -41,7 +42,7 @@ define('RODAPE', "Nome do site" );
 define('EMAIL_PHPMAILER_SECURE', 'tls');
 define('EMAIL_PHPMAILER_CHARSET', 'utf-8');
 define('EMAIL_PHPMAILER_HOST', 'mail.MAYKONSILVEIRA.COM.BR');
-define('EMAIL_PHPMAILER_USERNAME', 'sheepnotificacoes@MAYKONSILVEIRA.COM.BR');
+define('EMAIL_PHPMAILER_USERNAME', '');
 define('EMAIL_PHPMAILER_PASS', '');
 define('EMAIL_PHPMAILER_PORT', "587");
 define('EMAIL_PHPMAILER_QUEM_ENVIA', "");
