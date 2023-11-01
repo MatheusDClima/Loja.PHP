@@ -192,7 +192,7 @@ require('./sheep_core/config.php');
 
     
 
-    <!--INÍCIO OFERTAS PRODUTOS EM DESTAQUE-->
+    <!--INÍCIO BANNER PRODUTOS EM DESTAQUE-->
     <div class="ofertas">
 
         <div class="corpo-categorias">
@@ -212,7 +212,7 @@ require('./sheep_core/config.php');
         </div>
 
     </div>
-    <!--FIM OFERTAS PRODUTOS EM DESTAQUE-->
+    <!--FIM BANNER PRODUTOS EM DESTAQUE-->
 
     <!--INÍCIO DEPOIMENTOS-->
     <div class="depoimentos">

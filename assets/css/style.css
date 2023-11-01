@@ -28,7 +28,7 @@ body{
 
 /*formatar linha a linha do html*/
 
-/*---------------BANNER E MENU-------------*/
+/*-------------- MENU -------------*/
 
 .banner{
     background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
@@ -442,8 +442,6 @@ ul{
     color: var(--cor-fonte);
 }
 
-/*----------DETALHES DO PRODUTO-----------*/
-
 
 
 /*-----------CARRINHO DE COMPRAS----------*/
@@ -492,6 +490,7 @@ ul{
     border-bottom: 1px solid #aaa;
 }
 
+
 .linha-imagem{
     display: flex;
     width: 50px;
@@ -520,7 +519,7 @@ ul{
 
 .fa-trash-o:hover{
     cursor: pointer;
-    color: var(--cor-fonte-corpo-leve);
+    color: var(--cor-btn-fonte);
 }
 
 /*----------MINHA CONTA-----------*/
